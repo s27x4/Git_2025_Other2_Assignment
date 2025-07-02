@@ -1,10 +1,41 @@
 <!DOCTYPE html>
 <html lang="ja">
 	<head>
-	    <meta charset="UTF-8">
-	    <title>Quiz</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Quiz</title>
 	</head>
 	<body>
+		<div id="quiz-container">
+			<h1>クイズ</h1>
+			<div id="question">
+				<p>日本の都道府県の数はどれか。</p>
+			</div>
+			<div id="choices">
+				<div>
+					<input type="radio" id="choice1" name="quiz-choice" value="1">
+					<label for="choice1">40</label>
+				</div>
+				<div>
+					<input type="radio" id="choice2" name="quiz-choice" value="2">
+					<label for="choice2">47</label>
+				</div>
+				<div>
+					<input type="radio" id="choice3" name="quiz-choice" value="3">
+					<label for="choice3">50</label>
+				</div>
+				<div>
+					<input type="radio" id="choice4" name="quiz-choice" value="4">
+					<label for="choice4">60</label>
+				</div>
+			</div>
+			<div id="submit-container">
+				<button id="submit">解答</button>
+			</div>
+			<div id="result-container">
+				<p id="result"></p>
+			</div>
+		</div>
 		<script src="Quiz.js"></script>
 	</body>
 </html>
